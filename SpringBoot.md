@@ -15,3 +15,19 @@
 
 
 @Value("${name}")        配合SPEL表达式
+
+
+
+
+
+
+
+> SpringBoot自动装配
+
+启动时 会加载 autoConfig包下的 MATE-INF/spring.factories，里面配置了大量的配置类（****AutoConfiguration）， 每个对应的AutoConfiguration  又有一个 对应的 ****Properties
+
+
+
+> @Condition
+
+该注解判断存在某个条件时，才生效某某配置
