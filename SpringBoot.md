@@ -31,3 +31,20 @@
 > @Condition
 
 该注解判断存在某个条件时，才生效某某配置
+
+
+
+
+
+> SpringBoot配置文件的位置 及 静态资源 的位置和优先级
+
+
+
+> i18n  国际化
+
+messageSourceAutoConfiguration
+
+自定义组件LocaleResolver
+
+i18n 放在resourse 目录下即可
+
