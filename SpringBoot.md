@@ -48,3 +48,21 @@ messageSourceAutoConfiguration
 
 i18n 放在resourse 目录下即可
 
+
+
+> SpringBoot 的三大特性
+
+- 组件自动装配
+- 嵌入式Web容器
+- 生产准备指标
+
+
+
+> 组件自动装配
+
+- 激活：@EnableAutoConfiguration
+- 配置：/MATE-INF/spring.factories
+- 实现：XXXAutoConfiguration
+
+
+
