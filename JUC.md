@@ -112,3 +112,28 @@ private static final Object PRESENT = new Object(); // 不变得值！
 1. Map<String, String> map = Collections.synchronizedMap(new HashMap());
 2. Map<String, String> map = new ConcurrentHashMap<>();
 
+
+
+> 常用辅助类
+
+- CountDownLatch  -->减法
+
+  原理：
+  countDownLatch.countDown(); // 数量-1
+
+  countDownLatch.await(); // 等待计数器归零，然后再向下执行
+
+  每次有线程调用 countDown() 数量-1，假设计数器变为0，countDownLatch.await() 就会被唤醒，继续执行！
+
+- CyclicBarrier  --> 加法
+
+  达到一定的数量，再触发await
+
+- Semaphore  --> 信号量
+
+  原理：
+  semaphore.acquire() 获得，假设如果已经满了，等待，等待被释放为止！
+
+  semaphore.release(); 释放，会将当前的信号量释放 + 1，然后唤醒等待的线程！
+  作用： 多个共享资源互斥的使用！并发限流，控制最大的线程数！
+
